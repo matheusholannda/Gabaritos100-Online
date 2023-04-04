@@ -1,0 +1,126 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "LH Games - Consumo",
+    "description": "Documentacao para consumo de Produtos",
+    "termsOfService": "http://lhgames.com/v1/termos",
+    "version": "1.0",
+    "contact": {
+      "email": "api@lhgames.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://api.lhgames.com/v1",
+      "description": "Servidor de Produção"
+    },
+    {
+      "url": "http://testes-api.lhgames.com",
+      "description": "Servidor de testes de API"
+    }
+  ],
+  "paths": {
+    "/produtos": {
+      "get": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Retorno de Produtos.",
+        "description": "A LH Games retorna via API os Produtos de seu APP.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1
+                    },
+                    "nome": {
+                      "type": "string",
+                      "example": "God of War"
+                    },
+                    "foto": {
+                      "type": "string",
+                      "example": ".\\capa1.jpg"
+                    },
+                    "descricao": {
+                      "type": "string",
+                      "example": "aventura"
+                    },
+                    "preco": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 150
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "API não encontrada"
+          },
+          "405": {
+            "description": "Consumo sem permissão"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Adicionar novo Produto",
+        "description": "A LH Games recebe via API post os Produtos de seu APP.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int64",
+                    "example": 1
+                  },
+                  "nome": {
+                    "type": "string",
+                    "example": "God of War"
+                  },
+                  "foto": {
+                    "type": "string",
+                    "example": ".\\capa1.jpg"
+                  },
+                  "descricao": {
+                    "type": "string",
+                    "example": "aventura"
+                  },
+                  "preco": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 150
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "API não encontrada"
+          },
+          "405": {
+            "description": "Não permitido envio"
+          }
+        }
+      }
+    }
+  }
+}

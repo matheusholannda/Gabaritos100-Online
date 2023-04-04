@@ -1,0 +1,10 @@
+Após especificar os requisitos a serem atendidos para o projeto de um site de uma loja de eletrônicos voltada ao universo gamer e construir o protótipo de sua interface, está na hora de iniciar o desenvolvimento prático de seu Front-End.
+Então, mãos à obra!
+
+Desenvolva a página index (home) e de login, contendo menu, banner, destaque, novidades, galeria e rodapé para layout de desktop, aplicando: 
+
+• HTML e CSS3 para marcação e estilização;
+• Media query e Bootstrap para implementação de responsividade;
+• JQuery e JavaScript para implementação de funcionalidades. Você pode implementar a funcionalidade do formulário, com botões, Carousel entre outros, para deixar o site ainda mais dinâmico, de modo que mostre mensagens e informações que permitam melhor interação com os usuários.
+
+Após concluir o trabalho, publique na plataforma Github e compartilhe aqui o link. Não se esqueça de deixar o acesso público, para que o tutor consiga avaliar sua atividade.

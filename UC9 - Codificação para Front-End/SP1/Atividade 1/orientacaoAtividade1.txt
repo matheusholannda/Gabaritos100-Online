@@ -1,0 +1,18 @@
+No material digital, você estudou que aplicar os princípios de UX e UI é imprescindível para proporcionar experiências positivas ao cliente ou usuário.
+
+Vamos analisar esse processo na prática?
+
+Compartilhe uma experiência positiva e uma negativa que você já teve em um site, justificando quais princípios de UX e UI foram ou não aplicados, como: 
+
+• Design Interativo
+• Usabilidade 
+• Funcionalidade
+• Legibilidade
+• Intuitividade
+• Minimalismo X Poluído
+• Cores 
+• Friendly
+• Componentes de layout e informações organizadas
+• Técnicas de leitura
+
+Para melhor análise, print a tela, indique os problemas, compartilhe o link do site para que os demais colegas da turma possam acessá-lo e visualizá-lo. Comente ao menos duas postagens dos colegas.

@@ -1,0 +1,23 @@
+No material digital, você estudou que o primeiro passo para implementar um projeto de um site é realizar uma investigação cuidadosa para desenvolver a melhor solução, a qual atenda aos requisitos do problema ou da necessidade apresentada pelo cliente e traga uma experiência positiva ao público-alvo.
+Para testar a solução, o próximo passo é a prototipagem que, mesmo de forma simplificada, proporciona testes e validações.
+
+Então, mãos à obra!
+
+Consulte o arquivo CodFront_SP1_Briefing_Cliente.pdf e crie o protótipo de baixa e alta fidelidade, detalhado e fiel ao layout que será disponibilizado aos usuários do site de e-commerce voltado ao universo gamer para desktop.
+Para criar seu protótipo, contendo menu, imagem, textos, cabeçalho, rodapé, botões etc., consulte o material digital e siga o passo a passo para utilizar a ferramenta para criação de layouts de alta complexidade Figma (https://www.figma.com/).
+
+Lembre-se de utilizar imagens e vídeos de bancos free e aplicar os princípios de UX, UI e Design Interativo, como:
+• Usabilidade 
+• Funcionalidade
+• Legibilidade
+• Intuitividade
+• Minimalismo 
+• Cores 
+• Friendly
+• Componentes de layout e informações organizadas
+• Técnicas de leitura
+
+Vídeos com o passo a passo:
+
+https://www.youtube.com/watch?v=T1YY3JPkxkI
+https://www.youtube.com/watch?v=P-Q6VoT-iq8
