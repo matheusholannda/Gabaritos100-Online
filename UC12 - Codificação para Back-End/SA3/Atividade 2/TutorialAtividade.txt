@@ -1,0 +1,65 @@
+[ambiente]
+instalar sql server
+instalar ssms
+instalar vscode
+instalar dotnet
+instalar dotnet host (opcional)
+habilitar IIS (opcional)
+
+[atividade]
+Crie um projeto Web com os seguintes Requisitos:
+
+a) Na rota "/" deverá exibir a versão inicial do projeto que é "LH Pets - Protótipo 1"
+b) A página inicial "index.html" fornecida pelo front end deverá ser exibida através da rota "/index".
+c) A lista de Clientes que foram inseridas em um banco de dados deverá ser exibida pela requisição "/listaClientes"
+
+a) Na rota "/" deverá exibir a versão inicial do projeto que é "LH Pets - Protótipo 1"
+1 - Tenha os ambientes instalados sql server, ssms, vscode e dotnet
+2 - Baixe a pasta "Projeto Web-Lh Pets versão 1  - Alunos"
+3 - Entre no Vscode pela pasta
+4 - no Terminal digite o comando abaixo para criar a estrutura do projeto Web: 
+	dotnet new web --use-program-main
+5 - criar uma rota "/" para aparecer a versão atual do projeto "LH Pets - Protótipo 1" na classe Program.cs
+	app.MapGet("/", () => "LH Pets - Protótipo 1");
+
+b) A página inicial "index.html" fornecida pelo front end deverá ser exibida através da rota "/index".
+6 - criar uma rota "/index" para página front que está na pasta "wwwroot" index.html na classe Program.cs
+	app.UseStaticFiles();
+        app.MapGet("/index", (HttpContext contexto) => {
+                contexto.Response.Redirect("index.html", false);
+        });
+
+
+c) A lista de Clientes que foram inseridas em um banco de dados deverá ser exibida pela requisição "/listaClientes"
+7 - no SSMS - executar o arquivo vendas.sql
+8 - no Terminal do Vscode digite: dotnet add package System.Data.SqlClient --version 4.8.5
+
+
+c) A lista de Clientes que foram inseridas em um banco de dados deverá ser exibida pela requisição "/listaClientes"
+9 - Na classe Banco.cs deverá modificar a string de conexão. 
+    Para tanto deverá modificar as credenciais atuais para as credenciais do seu computador: 		
+		"User ID=???;Password=???;" +
+                "Server=???\\???;" +
+                   
+
+10 - Na classe Banco.cs deverá adicionar uma lista privada que recebe a classe Clientes :
+	
+	private List<Clientes> lista=new List<Clientes>();	
+	
+11-  Crie uma função pública com o nome GetLista que retorne o atributo lista.
+  	public List<Clientes> GetLista()
+        {
+             return lista;  
+               
+	}
+12- Na classe Program.cs instancie a classe Banco.cs.
+	  Banco dba=new Banco();
+      
+13- Na classe Program.cs crie rota a rota: "/listarclientes" e apresente a Lista de Clientes que estão na tabela através da função GetListaString
+	app.MapGet("/listaClientes", (HttpContext context) =>
+        {
+            context.Response.WriteAsync(dba.GetListaString());
+        });
+
+14 - Crie a pasta publish para instalação local através do comando abaixo:
+	dotnet publish - C Release
